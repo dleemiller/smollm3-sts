@@ -247,8 +247,8 @@ if __name__ == "__main__":
     print_bin_system()
 
     # Configuration
-    N_WIKI_SIM = 2750  # 250 per bin * 11 bins
-    N_STSB = 2750  # 250 per bin * 11 bins
+    N_WIKI_SIM = 1650  # 250 per bin * 11 bins
+    N_STSB = 3850
     N_BINS = 11  # Fixed at 11 for 0-10 rating system
 
     # Create the uniformly sampled dataset

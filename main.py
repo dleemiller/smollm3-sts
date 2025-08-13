@@ -146,14 +146,15 @@ def main():
 
     # ----- Dataset formatting -----
     SIMILARITY_INSTRUCTION = """Rate the semantic similarity (STS) between the reference and candidate text on a scale from 0 to 10, where:
-- SCORE: 0  # unrelated
-- SCORE: 5  # somewhat related
-- SCORE: 10  # identical or nearly identical
+- SCORE: 0.0  # unrelated
+- SCORE: 5.0  # somewhat related
+- SCORE: 10.0  # identical or nearly identical
 
 Respond with your reasoning (if using <think> tags) followed by your final rating in this exact format:
-SCORE: X
+SCORE: X.Y
 
-Where X is an integer from 0 to 10.
+Where X.Y is a single digit precision float from 0 to 10.
+No other score formats will be accepted.
 Use no extra whitespace or text."""
 
     def format_example(example):
